@@ -9,7 +9,7 @@ const renderer = new THREE.WebGLRenderer({ alpha: true }); // Asegúrate de que 
 
 // Establece el tamaño del renderizador y el color de fondo transparente
 renderer.setClearAlpha(0);
-renderer.setSize(600, 800);
+renderer.setSize(600, 650);
 
 // Obtén el contenedor del modelo 3D desde el documento HTML y agrega el elemento del renderizador a él
 const container = document.getElementById('Modelo3D');
@@ -40,8 +40,8 @@ const mouse = new THREE.Vector2();
 const targetRotation = new THREE.Vector2();
 
 function onDocumentMouseMove(event) {
-    mouse.x = (event.clientX / window.innerWidth) * 11 - 5;
-    mouse.y = -(event.clientY / window.innerHeight) * 11 + 8;
+    mouse.x = (event.clientX / window.innerWidth) * 15 - 5;
+    mouse.y = -(event.clientY / window.innerHeight) * 11 + 2;
 
     targetRotation.x = -mouse.y;
     targetRotation.y = mouse.x;
@@ -81,6 +81,7 @@ loader.load('./public/oso/scene.gltf', function (loadedGltf) {
     });
 
     gltf.scene.rotation.y = Math.PI;
+    gltf.scene.position.set(0, 1.1, 0);
     // Agrega el modelo cargado a la escena y comienza la animación
     scene.add(gltf.scene);
     animate();

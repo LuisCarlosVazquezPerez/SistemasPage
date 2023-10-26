@@ -9,7 +9,7 @@ const renderer = new THREE.WebGLRenderer({ alpha: true }); // Asegúrate de que 
 
 // Establece el tamaño del renderizador y el color de fondo transparente
 renderer.setClearAlpha(0);
-renderer.setSize(600, 650);
+renderer.setSize(600, 600);
 
 // Obtén el contenedor del modelo 3D desde el documento HTML y agrega el elemento del renderizador a él
 const container = document.getElementById('Modelo3D');
@@ -17,11 +17,11 @@ container.appendChild(renderer.domElement);
 
 // Crea una luz direccional y agrégala a la escena
 const light = new THREE.DirectionalLight(0xffffff, 22);
-light.position.set(1, 2, 1).normalize();
+light.position.set(1, 2, 2).normalize();
 scene.add(light);
 
 // Establece la posición de la cámara
-camera.position.z = 8;
+camera.position.z = 7;
 
 // Función para manejar el tamaño del renderizador y la cámara cuando cambia el tamaño de la ventana
 function handleResize() {

@@ -307,7 +307,9 @@
       <div
         class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
         data-te-carousel-fade data-te-carousel-item data-te-carousel-active>
-        <div class="bg-caroR bg-top lg:bg-caro3 bg-cover h-[300px] lg:bg-contain md:h-[700px] lg:h-[600px] lg:bg-center"> </div>
+        <div
+          class="bg-caroR bg-top lg:bg-caro3 bg-cover h-[300px] lg:bg-contain md:h-[700px] lg:h-[600px] lg:bg-center">
+        </div>
       </div>
       <!--Second item-->
       <div
@@ -351,6 +353,44 @@
     </button>
   </div>
 
+  <!-- Container for demo purpose -->
+  <div class="container my-12 mx-auto md:px-6">
+    <!-- Section: Design Block -->
+    <section class="mb-32 text-center lg:text-left">
+      <div class="px-6 py-12 md:px-12">
+        <div class="grid items-center lg:grid-cols-2 lg:gap-x-12">
+          <div class="mb-12 lg:mb-0" data-aos="fade-right">
+            <h2 class="my-12 text-5xl font-bold leading-tight tracking-tight">
+              ¿Estás listo para la<br />
+              <span class="text-blue-600">aventura del aprendizaje?</span>
+            </h2>
+            <a class="mb-2 inline-block rounded bg-blue-800 px-20 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#0E95E8] transition duration-150 ease-in-out hover:bg-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(14, 149, 232),0_4px_18px_0_rgba(14, 149, 232)] focus:bg-blue-600 focus:shadow-[0_8px_9px_-4px_rgba(14, 149, 232),0_4px_18px_0_rgba(14, 149, 232)] focus:outline-none focus:ring-0 active:bg-blue-700 active:shadow-[0_8px_9px_-4px_rgba(14, 149, 232),0_4px_18px_0_rgba(14, 149, 232)] dark:shadow-[0_4px_9px_-4px_rgba(20,164,77,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.2),0_4px_18px_0_rgba(20,164,77,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.2),0_4px_18px_0_rgba(20,164,77,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.2),0_4px_18px_0_rgba(20,164,77,0.1)] md:mr-2 md:mb-0"
+              data-te-ripple-init data-te-ripple-color="light" href="#!" role="button" id="conLuis">Listo</a>
+            <a class="inline-block rounded px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-blue-500 transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-blue-600 focus:text-blue-600 focus:outline-none focus:ring-0 active:text-blue-700 dark:hover:bg-neutral-700 dark:hover:bg-opacity-40"
+              data-te-ripple-init data-te-ripple-color="light" href="#!" role="button">Leer más</a>
+          </div>
+
+          <div class="mb-12 lg:mb-0 ">
+            <div data-te-lightbox-init class="flex flex-col space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
+              <div class="flex h-full w-full flex-1 flex-col">
+                <img src="public/img/gale1.jpg" data-te-img="public/img/gale1.jpg" alt="Table Full of Spices"
+                  class="mb-5 w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto rounded-lg" />
+                <img src="public/img/gale2.jpg" data-te-img="public/img/gale2.jpg" alt="Coconut with Strawberries"
+                  class="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto rounded-lg" />
+              </div>
+              <div class="flex h-full w-full flex-1 flex-col">
+                <video src="public/video/VideoTecnologico.mp4" class="rounded-lg" autoplay muted loop></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Design Block -->
+  </div>
+  <!-- Container for demo purpose -->
+
 
   <div class="bg-red-500  h-52">
 
@@ -362,6 +402,8 @@
   <script src="particles.min.js"></script>
   <script src="particlesjs-config.json"></script>
   <script src="aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
+  <script src="confeti.js"></script>
 
   <script>
     AOS.init({

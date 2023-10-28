@@ -8,6 +8,13 @@ module.exports = {
         fontFamily: {
           titulo: ['Bebas Neue', 'sans-serif'], 
           navegacion: ['Inter Tight', 'sans-serif']
+        },
+        backgroundImage: {
+          'caro1': "url('./public/img/caro2.PNG')",
+          'caro2': "url('./public/img/caro1.jpg')",
+          'caro3': "url('./public/img/caro3.jpg')",
+          'caroR': "url('./public/img/caroR.jpg')",
+
         }
       },
     },

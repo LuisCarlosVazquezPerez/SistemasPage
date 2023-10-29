@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.particulas{
+.particulas {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -10,16 +10,24 @@
     z-index: 1;
 }
 
-.iconosHover:hover .iconosScale{
+.iconosHover:hover .iconosScale {
     scale: 1.3;
     transition: ease .5s;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-.iconosHover:not(:hover) .iconosScale{
+.iconosHover:not(:hover) .iconosScale {
     transition: ease .5s;
 }
 
-.sombra{
+.sombra {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.textoMateria:hover {
+    font-weight: bold;
+}
+
+.osoR {
+    top: 100px;    
 }

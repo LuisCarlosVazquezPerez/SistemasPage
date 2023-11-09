@@ -29,5 +29,15 @@
 }
 
 .osoR {
-    top: 100px;    
+    top: 100px;
+}
+
+.flor{
+    background-image: url(./public/img/c3.png);
+}
+.roberto{
+    background-image: url(./public/img/c2.png);
+}
+.hilda{
+    background-image: url(./public/img/c1.png);
 }

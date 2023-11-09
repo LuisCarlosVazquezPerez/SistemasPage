@@ -14,7 +14,25 @@ module.exports = {
           'caro2': "url('./public/img/caro1.jpg')",
           'caro3': "url('./public/img/caro3.jpg')",
           'caroR': "url('./public/img/caroR.jpg')",
+        },
 
+        screens: {
+          'cel': '350px',
+
+          'sm': '640px',
+          // => @media (min-width: 640px) { ... }
+    
+          'md': '768px',
+          // => @media (min-width: 768px) { ... }
+    
+          'lg': '1024px',
+          // => @media (min-width: 1024px) { ... }
+    
+          'xl': '1280px',
+          // => @media (min-width: 1280px) { ... }
+    
+          '2xl': '1536px',
+          // => @media (min-width: 1536px) { ... }
         }
       },
     },
